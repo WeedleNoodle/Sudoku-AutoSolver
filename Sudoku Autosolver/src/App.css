@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tilesDiv{
+  display: inline-grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-column-gap: 0;
+  grid-gap: 1px;
+  background-color: black;
+  border: 3px solid black;
+  margin-bottom: 20px;
+}
+
+.tile{
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  padding: auto;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.navDiv{
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(143, 143, 143);
+  padding: 0 50px;
+  margin-bottom: 32px;
+}
+
+.navDiv > h1{
+  color: white;
+  font-weight: 200;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+}
+
+nav > a{
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+a:visited{
+  color: white;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.solveButton{
+  color: black;
+  height: 50px;
+  width: 100px;
+  font-weight: 800;
+  border-radius: 20px;
+  border: 5px solid black;
+  background-color: rgb(255, 255, 255);
+}
+
+.solveButton:hover{
+  background-color: rgb(230, 230, 230);
+  cursor: pointer;
+}
